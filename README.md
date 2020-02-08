@@ -20,4 +20,4 @@ Mihir Patel
 
 Reading Source
 ------
-[The Julia Set](https://en.wikipedia.org/wiki/Julia_set)
+[the Julia Set](https://en.wikipedia.org/wiki/Julia_set)
