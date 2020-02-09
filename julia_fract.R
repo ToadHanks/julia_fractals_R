@@ -6,8 +6,9 @@ library(scico)
 a <- -0.4
 b <- -0.6
 fixed_limits <- c(-2,2) 
-max_iteration <- 1000
+max_iteration <- 1000 
 
+#Colors
 col_palettes <- c(scico::scico(250, palette= 'bilbao'),
                   viridis::plasma(400),
                   viridis::viridis(800),
@@ -15,23 +16,22 @@ col_palettes <- c(scico::scico(250, palette= 'bilbao'),
                   viridis::cividis(400),
                   viridis::magma(500))
 
+#Steps
 steps <- seq(fixed_limits[1], fixed_limits[2], by= 0.01)
 
+#collects the points that have escaped
 points_matrix <- array(0, dim= c(length(steps) * length(steps), 3))
-a1 <- 0
+a1 <- 0 #point Z0 starts with
 
-for(x in steps)
-{
-  for(y in steps)
-  {
+for(x in steps) {
+  for(y in steps) {
     n <- 0
     distance <- 0
     # Copy original x and y
     x1 <- x
     y1 <- y 
     
-    while(n < max_iteration & distance<4)
-    {
+    while(n < max_iteration & distance<4) {
       newx <- x1^2 - y1^2 + a
       newy <- 2 * x1 * y1 + b
       distance <- newx^2 + newy^2
@@ -39,16 +39,16 @@ for(x in steps)
       y1 <- newy
       n <- n+1
     }
-    
+    # Assign colors
     if(distance < 4){
       pick_color <- 24
     }
     else{
       pick_color <- n*10
     }
-    
+    #move Z0, and put points in the matrix/array
     a1 <- a1 + 1
-    points_matrix[a1, ]=c(x,y, pick_color)
+    points_matrix[a1, ]=c(x,y, pick_color)  
     
   }
 }
