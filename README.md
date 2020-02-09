@@ -4,7 +4,7 @@ A Julia Set fractal
 
 Project Discription
 --------------------
-A (unoptimized) julia set fractal using only base R.
+A bad julia set fractal using only base R. Break it and expriment, up to you. All I know, it is badly done by me.
 
 Langauge
 ---------
@@ -12,7 +12,7 @@ R
 
 Packages
 --------
-Virdis (for color only)
+virdis, viridislite (for color only)
 
 Author
 ------
