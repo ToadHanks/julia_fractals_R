@@ -18,6 +18,10 @@ Author
 ------
 Mihir Patel
 
+blog
+-----
+[Read my blog here!](https://opendatasurgeon.github.io/julia/)
+
 Reading Source
 ------
 [the Julia Set](https://en.wikipedia.org/wiki/Julia_set)
