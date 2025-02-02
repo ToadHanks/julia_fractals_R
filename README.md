@@ -20,7 +20,7 @@ Mihir Patel
 
 blog
 -----
-[Read my blog here!](https://opendatasurgeon.github.io/julia/)
+[Read my blog here!](https://mihirp161.github.io/julia/)
 
 Reading Source
 ------
